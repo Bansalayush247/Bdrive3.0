@@ -48,11 +48,11 @@ function App() {
     {!modalOpen && (<button className="share" onClick={()=>setModalOpen(true)}>Share</button>)}
     {modalOpen && (<Modal setModalOpen={setModalOpen} contract={contract}></Modal>)}
     <div className="App">
-      <h1 style={{ color: "white" }}>Gdrive 3.0</h1>
-      <div class='bg'></div>
-      <div class='bg bg2'></div>
-      <div class='bg bg3'></div>
-      <p style={{color:'white'}}>
+      <h1 style={{ color: "maroon" }}>Gdrive 3.0</h1>
+      <div className='bg'></div>
+      <div className='bg bg2'></div>
+      <div className='bg bg3'></div>
+      <p style={{color:'maroon'}}>
         Account : {account?account:"Not Connected"}
       </p>
       <FileUpload account={account} contract={contract} provider={provider}/>

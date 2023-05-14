@@ -4,11 +4,14 @@ import "./Modal.css";
 const Modal = ({setModalOpen,contract}) => {
   const sharing = async() => {
     const address =document.querySelector(".address").value;
+    
     await contract.allow(address);
   };
   const deleting = async()=>{
     const address = document.querySelector(".address").value;
-    await contract.addressremover(address);
+   
+    await contract.addressremover(address);   
+
   };
   useEffect(()=>{
     const accessList = async()=>{
