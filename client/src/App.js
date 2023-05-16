@@ -48,7 +48,7 @@ function App() {
     {!modalOpen && (<button className="share" onClick={()=>setModalOpen(true)}>Share</button>)}
     {modalOpen && (<Modal setModalOpen={setModalOpen} contract={contract}></Modal>)}
     <div className="App">
-      <h1 style={{ color: "maroon" }}>Gdrive 3.0</h1>
+      <h1 style={{ color: "maroon" }}>Bdrive 3.0</h1>
       <div className='bg'></div>
       <div className='bg bg2'></div>
       <div className='bg bg3'></div>
